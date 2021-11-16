@@ -24,7 +24,13 @@ namespace Homework
 
         public static IEnumerable<int> IntegersFromList(List<object> smth)
         {
-            return smth.OfType<int>();
+            var result = new List<int>();
+            foreach (var item in smth)
+            {
+                if (item is int)
+                    result.Add((int)item);
+            }
+            return result;
         }
     }
     [TestFixture]
@@ -263,7 +269,11 @@ namespace Homework
 
         public static string IPv4Address(uint input)
         {
-            return IPAddress.Parse(input.ToString()).ToString();
+            uint v1 = input & 0xff;
+            uint v2 = (input >> 8) & 0xff;
+            uint v3 = (input >> 16) & 0xff;
+            uint v4 = (input >> 24);
+            return v4 + "." + v3 + "." + v2 + "." + v1;
         }
     }
 }
