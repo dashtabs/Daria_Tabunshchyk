@@ -1,0 +1,28 @@
+{
+  "uuid": "48afc78c-5d2a-4cb3-a940-c22a95629696-tc-0-1001",
+  "name": "OrangeTests.Tests.Test3",
+  "children": [
+    "08f21637-208c-47a5-8604-518881030c61-tr-0-1004"
+  ],
+  "befores": [
+    {
+      "name": "Setup",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1639773502146,
+      "stop": 1639773502146
+    }
+  ],
+  "afters": [],
+  "links": [],
+  "start": 1639773494087,
+  "stop": 1639773502149
+}
