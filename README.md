@@ -1,4 +1,4 @@
-# Selenium WebAPI tests 
+# WebAPI tests 
 
 Referring to this API: https://www.dropbox.com/developers/documentation/http/documentation
 
