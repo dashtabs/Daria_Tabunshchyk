@@ -1,0 +1,64 @@
+{
+  "uuid": "6472f00f-487e-40e7-a441-59b97a7d027c-tr-0-1002",
+  "historyId": "OrangeTests.Tests.Test1",
+  "fullName": "OrangeTests.Tests.Test1",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "LAPTOP-2PJ8BADG"
+    },
+    {
+      "name": "package",
+      "value": "OrangeTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Test1"
+    },
+    {
+      "name": "testClass",
+      "value": "Tests"
+    }
+  ],
+  "links": [],
+  "name": "Test1",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Test1"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Test1",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "aae9dee26e384231bc44fbf28ec638ca-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1639769472091,
+      "stop": 1639769480635
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1639769472091,
+  "stop": 1639769480642
+}

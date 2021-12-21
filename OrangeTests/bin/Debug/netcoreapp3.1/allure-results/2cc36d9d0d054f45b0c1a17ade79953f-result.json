@@ -1,0 +1,77 @@
+{
+  "uuid": "ce57355a-b2cb-455f-9e49-4a209f31ce1a-tr-0-1002",
+  "historyId": "OrangeTests.Tests.Test1",
+  "fullName": "OrangeTests.Tests.Test1",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "LAPTOP-2PJ8BADG"
+    },
+    {
+      "name": "package",
+      "value": "OrangeTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Test1"
+    },
+    {
+      "name": "testClass",
+      "value": "Tests"
+    },
+    {
+      "name": "tag",
+      "value": "CI"
+    },
+    {
+      "name": "subSuite",
+      "value": "Add"
+    },
+    {
+      "name": "suite",
+      "value": "OrangeTests"
+    }
+  ],
+  "links": [],
+  "name": "Test1",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Test1"
+  },
+  "stage": "finished",
+  "description": "Add a new job\n",
+  "steps": [
+    {
+      "name": "Test1",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "5ff78d983e8742d996d5933936617e42-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1639770182715,
+      "stop": 1639770190820
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1639770182714,
+  "stop": 1639770190824
+}
