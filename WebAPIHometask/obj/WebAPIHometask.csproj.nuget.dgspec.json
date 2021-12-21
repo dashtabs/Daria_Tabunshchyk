@@ -38,6 +38,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AspectInjector": {
+              "suppressParent": "None",
+              "target": "Package",
+              "version": "[2.6.1, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.0.0, )"

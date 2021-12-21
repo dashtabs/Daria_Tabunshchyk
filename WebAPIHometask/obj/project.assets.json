@@ -22,7 +22,7 @@
           }
         }
       },
-      "AspectInjector/2.6.0": {
+      "AspectInjector/2.6.1": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/AspectInjector.Broker.dll": {}
@@ -1606,19 +1606,20 @@
         "lib/netstandard2.0/Allure.Commons.dll"
       ]
     },
-    "AspectInjector/2.6.0": {
-      "sha512": "VTd4JwPJBdO+g0GFY9xPtsB63/iCs9WCCZkcw2KJ+4gCP3N1LQ99bsfuQhFfrdZOYxJ8I5HBPyojqGVJyKzuOA==",
+    "AspectInjector/2.6.1": {
+      "sha512": "XCLYxZFwOgq2EBsdzgekqu3R5IdGetIwTrWWLgzpoY8dMTTTqHdMzPgl0cfEGz39beTemvx+BeVPMUlxHwaU1g==",
       "type": "package",
-      "path": "aspectinjector/2.6.0",
+      "path": "aspectinjector/2.6.1",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "README.md",
         "analyzers/dotnet/cs/AspectInjector.Analyzer.dll",
         "analyzers/dotnet/cs/AspectInjector.Broker.dll",
         "analyzers/dotnet/cs/AspectInjector.Rules.dll",
         "analyzers/dotnet/cs/FluentIL.Common.dll",
-        "aspectinjector.2.6.0.nupkg.sha512",
+        "aspectinjector.2.6.1.nupkg.sha512",
         "aspectinjector.nuspec",
         "build/_bin/AspectInjector.Broker.dll",
         "build/_bin/AspectInjector.Core.Advice.dll",
@@ -5797,6 +5798,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "AspectInjector >= 2.6.1",
       "Microsoft.NET.Test.Sdk >= 17.0.0",
       "NUnit >= 3.13.2",
       "NUnit.Allure >= 1.2.0.1",
@@ -5845,6 +5847,11 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "AspectInjector": {
+            "suppressParent": "None",
+            "target": "Package",
+            "version": "[2.6.1, )"
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[17.0.0, )"

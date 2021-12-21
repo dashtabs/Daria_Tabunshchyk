@@ -24,6 +24,6 @@
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgBoDi Condition=" '$(PkgBoDi)' == '' ">C:\Users\dasha\.nuget\packages\bodi\1.5.0</PkgBoDi>
-    <PkgAspectInjector Condition=" '$(PkgAspectInjector)' == '' ">C:\Users\dasha\.nuget\packages\aspectinjector\2.6.0</PkgAspectInjector>
+    <PkgAspectInjector Condition=" '$(PkgAspectInjector)' == '' ">C:\Users\dasha\.nuget\packages\aspectinjector\2.6.1</PkgAspectInjector>
   </PropertyGroup>
 </Project>

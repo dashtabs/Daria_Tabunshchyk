@@ -110,3 +110,5 @@ C:\Users\dasha\source\repos\WebAPIHometask\WebAPIHometask\bin\Debug\netcoreapp3.
 C:\Users\dasha\source\repos\WebAPIHometask\WebAPIHometask\bin\Debug\netcoreapp3.1\AspectInjector.Broker.dll
 C:\Users\dasha\source\repos\WebAPIHometask\WebAPIHometask\bin\Debug\netcoreapp3.1\MimeTypesMap.dll
 C:\Users\dasha\source\repos\WebAPIHometask\WebAPIHometask\bin\Debug\netcoreapp3.1\NUnit.Allure.dll
+C:\Users\dasha\source\repos\WebAPIHometask\WebAPIHometask\bin\Debug\netcoreapp3.1\IoC.dll
+C:\Users\dasha\source\repos\WebAPIHometask\WebAPIHometask\bin\Debug\netcoreapp3.1\TeamCity.ServiceMessages.dll

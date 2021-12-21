@@ -15,7 +15,8 @@
           "RestSharp": "106.15.0",
           "SpecFlow": "3.9.40",
           "SpecFlow.NUnit": "3.9.40",
-          "TeamCity.Dotnet.Integration": "1.0.23"
+          "TeamCity.Dotnet.Integration": "1.0.23",
+          "TeamCity.VSTest.TestAdapter": "1.0.31"
         },
         "runtime": {
           "WebAPIHometask.dll": {}
@@ -54,6 +55,14 @@
           "lib/netstandard2.0/Gherkin.dll": {
             "assemblyVersion": "19.0.3.0",
             "fileVersion": "19.0.3.0"
+          }
+        }
+      },
+      "IoC.Container/1.3.7": {
+        "runtime": {
+          "lib/netcoreapp3.1/IoC.dll": {
+            "assemblyVersion": "1.3.7.0",
+            "fileVersion": "1.3.7.0"
           }
         }
       },
@@ -1009,7 +1018,23 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "TeamCity.Dotnet.Integration/1.0.23": {}
+      "TeamCity.Dotnet.Integration/1.0.23": {},
+      "TeamCity.ServiceMessages/3.0.13": {
+        "runtime": {
+          "lib/netcoreapp3.0/TeamCity.ServiceMessages.dll": {
+            "assemblyVersion": "3.0.13.85",
+            "fileVersion": "3.0.13.85"
+          }
+        }
+      },
+      "TeamCity.VSTest.TestAdapter/1.0.31": {
+        "dependencies": {
+          "IoC.Container": "1.3.7",
+          "Microsoft.TestPlatform.ObjectModel": "17.0.0",
+          "NETStandard.Library": "2.0.0",
+          "TeamCity.ServiceMessages": "3.0.13"
+        }
+      }
     }
   },
   "libraries": {
@@ -1045,6 +1070,13 @@
       "sha512": "sha512-kq9feqMojMj9aABrHb/ABEPaH2Y4dSclseSahAru6qxCeqVQNLLTgw/6vZMauzI1yBUL2fz03ub5yEd5btLfvg==",
       "path": "gherkin/19.0.3",
       "hashPath": "gherkin.19.0.3.nupkg.sha512"
+    },
+    "IoC.Container/1.3.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-50tllATitvCwWkqUZXO+PLMPsVhBgQrWWZV9jCYgNmNmkUQiJgwBw/CuWtzhkot3G3UjlQvHFYotqUbgMB6AjA==",
+      "path": "ioc.container/1.3.7",
+      "hashPath": "ioc.container.1.3.7.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/17.0.0": {
       "type": "package",
@@ -1640,6 +1672,20 @@
       "sha512": "sha512-BU43WancKMgJrFt/9W97rSiopzZMJD9swXBAWLLn5WISVi1FFnPlI4U28cMBHxLDhSpSKvS8xks6rcUO3A87xQ==",
       "path": "teamcity.dotnet.integration/1.0.23",
       "hashPath": "teamcity.dotnet.integration.1.0.23.nupkg.sha512"
+    },
+    "TeamCity.ServiceMessages/3.0.13": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YXIDS9mkyQvxfsdkTD7PG3kLGnI5MIctqLsIjotGie8f6Ky5bumxKnCkbr8VOagHn47H8myCRpLyhsMOvlSU+Q==",
+      "path": "teamcity.servicemessages/3.0.13",
+      "hashPath": "teamcity.servicemessages.3.0.13.nupkg.sha512"
+    },
+    "TeamCity.VSTest.TestAdapter/1.0.31": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tYIS3UFU/P8VX1FrRF20ZwbxN+v980NP1xynTgP3m9IQG3vU/lSHwhlPJsF85dKYS/0HKt+ecIbVaSIOFSKf8A==",
+      "path": "teamcity.vstest.testadapter/1.0.31",
+      "hashPath": "teamcity.vstest.testadapter.1.0.31.nupkg.sha512"
     }
   }
 }
