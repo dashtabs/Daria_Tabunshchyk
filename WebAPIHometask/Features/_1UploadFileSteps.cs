@@ -27,7 +27,6 @@ namespace WebAPIHometask.Features
                 new Header("Content-Type", "application/octet-stream"),
                 };
             rq.Build(name, headers);
-            // General.request = b.Get();
             request = b.Get();
         }
         [When(@"I send POST request to Dropbox (.*)")]
