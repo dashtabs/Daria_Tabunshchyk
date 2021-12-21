@@ -6,7 +6,42 @@ Checking https://opensource-demo.orangehrmlive.com/ website functionality.
 Open the project in Visual Studio. Open your test explorer. Features are named in alphabetical order, so you can just click `run all tests`. To generate the Allure report, you might need to install `Allure` and `scoop`.
 
 ## Allure
-Open `Powershell` and type `allure serve` and path to your `Allure Results` folder. 
+To connect report, I created `Allure-Report` and `Allure-Results` folders. I also added an `AllureNUnit` package and opened `Windows Powershell` and typed the following commands:
+`set-executionpolicy RemoteSigned -scope CurrentUser`
+`scoop install allure` 
+If you get an error that there is no `scoop` command, type `Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')` and repeat the previous two commands. 
+### You don't previous steps if Allure is already installed. 
+I've also created `Allureconfig.json` file in `OrangeTests\OrangeTests\bin\Debug\netcoreapp3.1` directory with the following contents:
+```JSON
+{
+  "allure": {
+    "directory": "C:\\Users\\dasha\\source\\repos\\OrangeTests\\OrangeTests\\Allure-Results",
+    "links": [
+      "https://github.com/AutomateThePlanet/Meissa/issues/{issue}",
+      "https://github.com/AutomateThePlanet/Meissa/projects/2#card-{tms}",
+      "{link}"
+    ]
+  }
+}
+```
+### You need to change path to the Allure-Results folder according to where it is located on your computer.
+
+And I've created `categories` file in the same directory with the following contents:
+```JSON
+[
+  {
+    "name": "Ignored tests",
+    "matchedStatuses": [ "skipped" ]
+  },
+  {
+    "name": "Product Bug",
+    "matchedStatuses": [ "broken", "failed" ],
+    "messageRegex": ".*AssertionExeption.*"
+  }
+]
+```
+Check that these files are in `netccoreapp3.1` and that your path to the file in `Allureconfig.json` is written correctly.
+Open `Powershell` and type `allure serve` and path to your `Allure Results` folder. Execute and you'll see the Allure report.
 
 ## Run from command line
 To run from command line in a proper order go to OrangeTests->OrangeTests->bin->Debug->netcoreapp3.1 and type `cmd` in the address line. Then paste the following command: 
@@ -25,8 +60,7 @@ private IWebDriver driver;
 Username: `Admin`
 Password: `admin123`
 
-1. Please, use `A_Login.feature` to see the desirable result or an error result scenarios.
-2. Go to `A_LogginInSteps.cs` to see the definition.
+Every test includes successful login to page and redirect to Job Titles page.
 
 ## Task 1
 ##### Add new job: Student or Intern.
