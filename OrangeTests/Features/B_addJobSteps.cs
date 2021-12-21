@@ -66,8 +66,12 @@ namespace OrangeTests.Features
         [Then(@"The element with the title (.*) should be visible")]
         public void ThenTheElementShouldBeVisible(string title)
         {
-            IWebElement element = driver.FindElement(By.XPath(string.Format("//*[contains(text(), " + title + ")]")));
-            Assert.IsTrue(element.Displayed, "Title Student should be visible on the grid");
+            //IWebElement element = driver.FindElement(By.TagName("a"));
+            //IWebElement check = element.FindElement(By.XPath(string.Format("//*[contains(text(), " + title + ")]")));
+            IWebElement element = driver.FindElement(By.XPath("//a[.= '" + title + "']"));
+            string field = element.Text;
+            Assert.AreEqual(title, field);
+            //Assert.IsTrue(field.Displayed, "Title " + title + " should be visible on the grid");
         }
     }
 }

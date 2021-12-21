@@ -58,7 +58,7 @@ namespace OrangeTests.Features
         public void ThenTheElementShouldBeDeleted(string name)
         {
             Boolean exist = driver.FindElements(By.XPath(string.Format("//*[contains(text(), " + name + ")]"))).Count == 0;
-            Assert.IsFalse(exist, "Title Student shouldn't be visible on the grid");
+            Assert.IsFalse(exist, "Title " + name + " shouldn't be visible on the grid");
         }
     }
 }

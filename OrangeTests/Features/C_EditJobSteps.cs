@@ -57,11 +57,15 @@ namespace OrangeTests.Features
             job.EditClick();
         }
         [AllureTag("CI")]
-        [Then(@"The element with the description (.*) should be visible")]
-        public void ThenTheElementWithTheDescription(string description)
+        [Then(@"The element (.*) with the description (.*) should be visible")]
+        public void ThenTheElementWithTheDescription(string name, string description)
         {
-            IWebElement element = driver.FindElement(By.XPath(string.Format("//*[contains(text(), " + description + ")]")));
-            Assert.IsTrue(element.Displayed, "Description Sleepy should be visible on the grid");
+            IWebElement element = driver.FindElement(By.XPath("//*[.= '" + description + "']"));
+            string field = element.Text;
+            Assert.AreEqual(description, field);
+            IWebElement element1 = element.FindElement(By.XPath("//a[.= '" + name + "']"));
+            string field1 = element1.Text;
+            Assert.AreEqual(name, field1);
         }
     }
 }

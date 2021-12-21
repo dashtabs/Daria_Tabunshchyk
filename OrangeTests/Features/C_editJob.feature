@@ -11,4 +11,4 @@
 		And I clear the description
 		And I write the description Sleepy
 		When I click Save
-		Then The element with the description Sleepy should be visible
+		Then The element Student with the description Sleepy should be visible
