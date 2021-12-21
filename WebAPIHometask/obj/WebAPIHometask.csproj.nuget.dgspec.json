@@ -65,6 +65,16 @@
             "SpecFlow.NUnit": {
               "target": "Package",
               "version": "[3.9.40, )"
+            },
+            "TeamCity.Dotnet.Integration": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.23, )"
+            },
+            "TeamCity.VSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[1.0.31, )"
             }
           },
           "imports": [

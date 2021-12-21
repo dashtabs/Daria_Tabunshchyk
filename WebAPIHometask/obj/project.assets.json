@@ -55,6 +55,15 @@
           "lib/netstandard2.0/Gherkin.dll": {}
         }
       },
+      "IoC.Container/1.3.7": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/IoC.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/IoC.dll": {}
+        }
+      },
       "Microsoft.CodeCoverage/17.0.0": {
         "type": "package",
         "compile": {
@@ -1552,6 +1561,30 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
+      },
+      "TeamCity.Dotnet.Integration/1.0.23": {
+        "type": "package"
+      },
+      "TeamCity.ServiceMessages/3.0.13": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/TeamCity.ServiceMessages.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/TeamCity.ServiceMessages.dll": {}
+        }
+      },
+      "TeamCity.VSTest.TestAdapter/1.0.31": {
+        "type": "package",
+        "dependencies": {
+          "IoC.Container": "1.3.7",
+          "Microsoft.TestPlatform.ObjectModel": "15.9.2",
+          "NETStandard.Library": "1.6.1",
+          "TeamCity.ServiceMessages": "3.0.13"
+        },
+        "build": {
+          "build/netcoreapp1.0/TeamCity.VSTest.TestAdapter.props": {}
+        }
       }
     }
   },
@@ -1642,6 +1675,42 @@
         "lib/net45/Gherkin.xml",
         "lib/netstandard2.0/Gherkin.dll",
         "lib/netstandard2.0/Gherkin.xml"
+      ]
+    },
+    "IoC.Container/1.3.7": {
+      "sha512": "50tllATitvCwWkqUZXO+PLMPsVhBgQrWWZV9jCYgNmNmkUQiJgwBw/CuWtzhkot3G3UjlQvHFYotqUbgMB6AjA==",
+      "type": "package",
+      "path": "ioc.container/1.3.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "common/icon.png",
+        "ioc.container.1.3.7.nupkg.sha512",
+        "ioc.container.nuspec",
+        "lib/net40/IoC.dll",
+        "lib/net45/IoC.dll",
+        "lib/net46/IoC.dll",
+        "lib/net47/IoC.dll",
+        "lib/net48/IoC.dll",
+        "lib/net5.0/IoC.dll",
+        "lib/net6.0/IoC.dll",
+        "lib/netcoreapp1.0/IoC.dll",
+        "lib/netcoreapp1.1/IoC.dll",
+        "lib/netcoreapp2.0/IoC.dll",
+        "lib/netcoreapp2.1/IoC.dll",
+        "lib/netcoreapp2.2/IoC.dll",
+        "lib/netcoreapp3.0/IoC.dll",
+        "lib/netcoreapp3.1/IoC.dll",
+        "lib/netstandard1.0/IoC.dll",
+        "lib/netstandard1.1/IoC.dll",
+        "lib/netstandard1.2/IoC.dll",
+        "lib/netstandard1.3/IoC.dll",
+        "lib/netstandard1.4/IoC.dll",
+        "lib/netstandard1.5/IoC.dll",
+        "lib/netstandard1.6/IoC.dll",
+        "lib/netstandard2.0/IoC.dll",
+        "lib/netstandard2.1/IoC.dll",
+        "lib/uap10.0.10240/IoC.dll"
       ]
     },
     "Microsoft.CodeCoverage/17.0.0": {
@@ -5626,6 +5695,104 @@
         "system.threading.tasks.4.3.0.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
+    },
+    "TeamCity.Dotnet.Integration/1.0.23": {
+      "sha512": "BU43WancKMgJrFt/9W97rSiopzZMJD9swXBAWLLn5WISVi1FFnPlI4U28cMBHxLDhSpSKvS8xks6rcUO3A87xQ==",
+      "type": "package",
+      "path": "teamcity.dotnet.integration/1.0.23",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "build/_common/msbuild12/JetBrains.Annotations.dll",
+        "build/_common/msbuild12/TeamCity.MSBuild.Logger.dll",
+        "build/_common/msbuild12/TeamCity.ServiceMessages.dll",
+        "build/_common/msbuild14/JetBrains.Annotations.dll",
+        "build/_common/msbuild14/Microsoft.Build.Framework.dll",
+        "build/_common/msbuild14/TeamCity.MSBuild.Logger.dll",
+        "build/_common/msbuild14/TeamCity.ServiceMessages.dll",
+        "build/_common/msbuild15/JetBrains.Annotations.dll",
+        "build/_common/msbuild15/Microsoft.Build.Framework.dll",
+        "build/_common/msbuild15/System.AppContext.dll",
+        "build/_common/msbuild15/System.Buffers.dll",
+        "build/_common/msbuild15/System.Collections.Concurrent.dll",
+        "build/_common/msbuild15/System.Diagnostics.DiagnosticSource.dll",
+        "build/_common/msbuild15/System.IO.Compression.ZipFile.dll",
+        "build/_common/msbuild15/System.IO.FileSystem.Primitives.dll",
+        "build/_common/msbuild15/System.Linq.Expressions.dll",
+        "build/_common/msbuild15/System.Linq.dll",
+        "build/_common/msbuild15/System.ObjectModel.dll",
+        "build/_common/msbuild15/System.Reflection.Emit.ILGeneration.dll",
+        "build/_common/msbuild15/System.Reflection.Emit.Lightweight.dll",
+        "build/_common/msbuild15/System.Reflection.Emit.dll",
+        "build/_common/msbuild15/System.Reflection.TypeExtensions.dll",
+        "build/_common/msbuild15/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "build/_common/msbuild15/System.Runtime.Numerics.dll",
+        "build/_common/msbuild15/System.Security.Cryptography.OpenSsl.dll",
+        "build/_common/msbuild15/System.Security.Cryptography.Primitives.dll",
+        "build/_common/msbuild15/System.Text.RegularExpressions.dll",
+        "build/_common/msbuild15/System.Threading.Tasks.Extensions.dll",
+        "build/_common/msbuild15/System.Threading.Tasks.Parallel.dll",
+        "build/_common/msbuild15/System.Threading.Thread.dll",
+        "build/_common/msbuild15/System.Threading.ThreadPool.dll",
+        "build/_common/msbuild15/System.Threading.dll",
+        "build/_common/msbuild15/System.Xml.ReaderWriter.dll",
+        "build/_common/msbuild15/System.Xml.XDocument.dll",
+        "build/_common/msbuild15/TeamCity.MSBuild.Logger.dll",
+        "build/_common/msbuild15/TeamCity.ServiceMessages.dll",
+        "build/_common/vstest12/TeamCity.ServiceMessages.dll",
+        "build/_common/vstest12/TeamCity.VSTest.TestAdapter.dll",
+        "build/_common/vstest14/IoC.dll",
+        "build/_common/vstest14/TeamCity.ServiceMessages.dll",
+        "build/_common/vstest14/TeamCity.VSTest.TestAdapter.dll",
+        "build/_common/vstest15/IoC.dll",
+        "build/_common/vstest15/TeamCity.ServiceMessages.dll",
+        "build/_common/vstest15/TeamCity.VSTest.TestAdapter.dll",
+        "build/_common/vstest15/TeamCity.VSTest.TestLogger.dll",
+        "teamcity.dotnet.integration.1.0.23.nupkg.sha512",
+        "teamcity.dotnet.integration.nuspec"
+      ]
+    },
+    "TeamCity.ServiceMessages/3.0.13": {
+      "sha512": "YXIDS9mkyQvxfsdkTD7PG3kLGnI5MIctqLsIjotGie8f6Ky5bumxKnCkbr8VOagHn47H8myCRpLyhsMOvlSU+Q==",
+      "type": "package",
+      "path": "teamcity.servicemessages/3.0.13",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/TeamCity.ServiceMessages.dll",
+        "lib/net40/TeamCity.ServiceMessages.dll",
+        "lib/net45/TeamCity.ServiceMessages.dll",
+        "lib/netcoreapp1.0/TeamCity.ServiceMessages.dll",
+        "lib/netcoreapp2.0/TeamCity.ServiceMessages.dll",
+        "lib/netcoreapp3.0/TeamCity.ServiceMessages.dll",
+        "lib/netstandard1.3/TeamCity.ServiceMessages.dll",
+        "teamcity.servicemessages.3.0.13.nupkg.sha512",
+        "teamcity.servicemessages.nuspec"
+      ]
+    },
+    "TeamCity.VSTest.TestAdapter/1.0.31": {
+      "sha512": "tYIS3UFU/P8VX1FrRF20ZwbxN+v980NP1xynTgP3m9IQG3vU/lSHwhlPJsF85dKYS/0HKt+ecIbVaSIOFSKf8A==",
+      "type": "package",
+      "path": "teamcity.vstest.testadapter/1.0.31",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "_common/icon.png",
+        "build/_common/vstest12/TeamCity.ServiceMessages.dll",
+        "build/_common/vstest12/TeamCity.VSTest.TestAdapter.dll",
+        "build/_common/vstest14/IoC.dll",
+        "build/_common/vstest14/TeamCity.ServiceMessages.dll",
+        "build/_common/vstest14/TeamCity.VSTest.TestAdapter.dll",
+        "build/_common/vstest15/IoC.dll",
+        "build/_common/vstest15/TeamCity.ServiceMessages.dll",
+        "build/_common/vstest15/TeamCity.VSTest.TestAdapter.dll",
+        "build/_common/vstest15/TeamCity.VSTest.TestLogger.dll",
+        "build/net35/TeamCity.VSTest.TestAdapter.props",
+        "build/netcoreapp1.0/TeamCity.VSTest.TestAdapter.props",
+        "teamcity.vstest.testadapter.1.0.31.nupkg.sha512",
+        "teamcity.vstest.testadapter.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -5636,7 +5803,9 @@
       "NUnit3TestAdapter >= 4.1.0",
       "RestSharp >= 106.15.0",
       "SpecFlow >= 3.9.40",
-      "SpecFlow.NUnit >= 3.9.40"
+      "SpecFlow.NUnit >= 3.9.40",
+      "TeamCity.Dotnet.Integration >= 1.0.23",
+      "TeamCity.VSTest.TestAdapter >= 1.0.31"
     ]
   },
   "packageFolders": {
@@ -5703,6 +5872,16 @@
           "SpecFlow.NUnit": {
             "target": "Package",
             "version": "[3.9.40, )"
+          },
+          "TeamCity.Dotnet.Integration": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[1.0.23, )"
+          },
+          "TeamCity.VSTest.TestAdapter": {
+            "target": "Package",
+            "version": "[1.0.31, )"
           }
         },
         "imports": [
