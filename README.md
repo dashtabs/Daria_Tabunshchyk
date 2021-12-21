@@ -8,6 +8,10 @@ Open the project in Visual Studio. Open your test explorer. Features are named i
 ## Allure
 Open `Powershell` and type `allure serve` and path to your `Allure Results` folder. 
 
+## Run from command line
+To run from command line in a proper order go to OrangeTests->OrangeTests->bin->Debug->netcoreapp3.1 and type `cmd` in the address line. Then paste the following command: 
+`dotnet vstest OrangeTests.dll /Tests:ISuccessfullyLoginToAPage,SuccesfullyAddedANewJob,SuccesfullyEditedAJob,DeleteAJobSuccesfully`
+
 ## Preparations
 We work with a Page Object model. Here we need two classes: `JobTitlePageObject` and `LoginPageObject`. We don't work with other pages in this assignment. See the corresponding classes for the understanding of their applications.
 
