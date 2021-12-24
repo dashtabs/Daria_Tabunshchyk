@@ -53,12 +53,26 @@ namespace OrangeTests.Features
         {
             job.DeleteConfirm();
         }
+        public bool Exists(By by)
+        {
+            if (driver.FindElements(by).Count != 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
         [AllureTag("CI")]
         [Then(@"The element with the title (.*) should be deleted")]
         public void ThenTheElementShouldBeDeleted(string name)
         {
-            Boolean exist = driver.FindElements(By.XPath(string.Format("//*[contains(text(), " + name + ")]"))).Count == 0;
-            Assert.IsFalse(exist, "Title " + name + " shouldn't be visible on the grid");
+            //Boolean exist = driver.FindElements(By.XPath(string.Format("//*[contains(text(), " + name + ")]"))).Count == 0;
+            //Assert.IsFalse(exist, "Title " + name + " shouldn't be visible on the grid");
+            //IWebElement element = driver.FindElement(By.XPath("//a[.= '" + name + "']"));
+            By by = By.XPath("//a[.= '" + name + "']");
+            Assert.AreEqual(false, Exists(by));
         }
     }
 }
