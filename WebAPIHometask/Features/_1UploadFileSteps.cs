@@ -36,7 +36,7 @@ namespace WebAPIHometask.Features
             response = (RestResponse)client.Post(request);
         }
         [AllureTag("CI")]
-        [Then(@"I should get response (.*)")]
+        [Then(@"I should get response with (.*) in contents")]
          public void ThenIShouldGetResponse(string p0)
         {
             // var res = response.StatusCode;
