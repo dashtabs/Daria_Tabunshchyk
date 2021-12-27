@@ -39,8 +39,11 @@ namespace WebAPIHometask.Features
         [Then(@"The response should be (.*)")]
         public void ThenTheResponseShouldBe(string p0)
         {
-            var res = response.StatusCode;
-            Assert.True(res == System.Net.HttpStatusCode.OK, response.StatusCode.ToString());
+            // var res = response.StatusCode;
+            // Assert.True(res == System.Net.HttpStatusCode.OK, response.StatusCode.ToString());
+            var result = response.Content;
+            Boolean check = result.Contains(p0);
+            Assert.AreEqual(true, check);
         }
     }
 }
