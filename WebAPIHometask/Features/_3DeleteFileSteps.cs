@@ -36,7 +36,7 @@ namespace WebAPIHometask.Features
             response = (RestResponse)client.Post(request);
         }
         [AllureTag("CI")]
-        [Then(@"The response must be (.*)")]
+        [Then(@"The response must be with (.*) file in contents")]
         public void ThenTheResponseMustBeOK(string p0)
         {
             var result = response.Content;
