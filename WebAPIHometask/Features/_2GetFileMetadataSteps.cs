@@ -36,7 +36,7 @@ namespace WebAPIHometask.Features
             response = (RestResponse)client.Post(request);
         }
         [AllureTag("CI")]
-        [Then(@"The response should be (.*)")]
+        [Then(@"The response should be with (.*) in contents")]
         public void ThenTheResponseShouldBe(string p0)
         {
             // var res = response.StatusCode;
