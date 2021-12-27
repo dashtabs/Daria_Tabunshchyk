@@ -39,8 +39,9 @@ namespace WebAPIHometask.Features
         [Then(@"The response must be (.*)")]
         public void ThenTheResponseMustBeOK(string p0)
         {
-            var res = response.StatusCode;
-            Assert.True(res == System.Net.HttpStatusCode.OK, response.StatusCode.ToString());
+            var result = response.Content;
+            Boolean check = result.Contains(p0);
+            Assert.AreEqual(true, check);
         }
     }
 }
